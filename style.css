@@ -79,7 +79,6 @@ body {
   margin: auto;
   text-align: center;
   height: 50px;
-  margin-top: 20px;
 }
 .header_menu {
   position: fixed;
@@ -200,10 +199,19 @@ h3 {
   font-size: 0;
   position: relative;
   margin-bottom: 50px;
+  /* background-color: #fff; */
+}
+.main-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 10px;
+  background-color: #fff;
 }
 .container img {
   width: 75px;
   height: 75px;
+  vertical-align: bottom;
 }
 .content {
   display: inline-block;
@@ -243,6 +251,19 @@ i.star {
   font-weight: 700;
   line-height: 30px;
 }
+.ceo {
+  vertical-align: top;
+  font-size: 14px;
+  color: #3a3d4e;
+}
+.ceo-item {
+  width: 200px;
+  height: 45px;
+  padding: 0 0 0 20px;
+  background-color: #fff;
+  margin-left: 40px;
+  box-shadow: 0 2px 16px -5px;
+}
 .about {
   color: #43545c;
   font-size: 16px;
@@ -262,7 +283,7 @@ i.star {
   margin-bottom: 18px;
   margin-left: 1px;
   border-radius: 3px;
-  box-shadow: 0 2px 7px -2px;
+  box-shadow: 0 2px 16px -5px;
   min-height: 70px;
   z-index: 2;
   width: 100%;
@@ -277,28 +298,37 @@ i.star {
   vertical-align: middle;
   font-weight: 400;
   color: #3a3d4e;
-  width: 31%;
+  width: 21%;
   box-sizing: border-box;
   padding-right: 35px;
   font-size: 14px;
   max-width: 297px;
   line-height: 1.7;
 }
+
+.subsurface > div > a.user {
+  width: 14%;
+}
 .subsurface > div > a {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   color: #666;
   text-decoration: none;
-  width: 15%;
+  width: 26%;
   font-size: 13px;
   box-sizing: border-box;
   padding-right: 11px;
   line-height: 1.7;
   word-wrap: break-word;
 }
+.subsurface > div > .user-text {
+  width: 27%;
+  text-align: center;
+  vertical-align: middle;
+}
 .subsurface > div > span {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: super;
   font-size: 13px;
   width: 20%;
   box-sizing: border-box;
@@ -335,20 +365,25 @@ i.star {
 }
 .subsurface > div > div {
   display: inline-block;
-  vertical-align: bottom;
-  width: 28%;
+  width: 31%;
   padding-left: 4%;
   padding-top: 10px;
 }
 .subsurface > div > div.two.license > .blue {
   width: 42%;
   display: inline-block;
+  text-decoration: none;
+}
+.subsurface > div > div.two.license > .user-company {
+  display: initial;
+  text-decoration: none;
 }
 .subsurface > div > div.two > .blue > b {
   font-size: 14px;
 }
-.subsurface > div > div.two.license > .blue {
-  width: 42%;
+b {
+  font-size: 15px;
+  /* color: #000; */
 }
 .integration {
   background-color: #f2f2f2;
@@ -368,6 +403,58 @@ label {
   width: 20%;
   vertical-align: top;
   margin-right: 6%;
+}
+.container1 {
+  display: none;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+.container1.active {
+  display: block;
+}
+section.blue {
+  background-color: #7894bc;
+}
+.menu-block > div:nth-child(1) {
+  box-shadow: inset 0 6px 10px -5px rgba(34, 34, 34, 0.65);
+}
+.menu-block > div {
+  padding: 17px 0 16px 0;
+  position: relative;
+}
+.menu-block > div:nth-child(1) ul {
+  list-style: none;
+  width: 964px;
+  margin: 0 auto;
+  padding: 0;
+}
+.menu-block > div:nth-child(1) ul li {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-right: 102px;
+  margin-left: 12px;
+}
+.menu-block > div:nth-child(1) ul li a.active {
+  cursor: default;
+  opacity: 0.5;
+}
+.menu-block > div:nth-child(1) ul li a {
+  color: #fff;
+  font-family: "PT Sans Bold", "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+section {
+  width: 100%;
+  max-width: 1358px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px -2px #aba7a7;
+  margin: 0 auto;
 }
 .social {
   display: inline-block;
@@ -739,16 +826,6 @@ label {
     padding-top: 150px;
     font-size: 40px;
     text-align: center;
-  }
-  .container-1,
-  .container-2 {
-    display: block;
-    width: 100%;
-  }
-  .amChartsLegend {
-    position: relative;
-    left: -10px !important;
-    top: 5px !important;
   }
 
   /* Футер моб */

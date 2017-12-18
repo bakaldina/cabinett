@@ -11,4 +11,25 @@ $(document).ready(function() {
       .toggleClass("active");
     return false;
   });
+
+  var $button1 = document.querySelector(".button-1"),
+    $container1 = document.querySelector(".container-11"),
+    $button2 = document.querySelector(".button-2"),
+    $container2 = document.querySelector(".container-12");
+
+  $button1.addEventListener("click", function() {
+    $container1.classList.add("active");
+    $container2.classList.remove("active");
+
+    $button1.classList.add("active");
+    $button2.classList.remove("active");
+  });
+
+  $button2.addEventListener("click", function() {
+    $container1.classList.remove("active");
+    $container2.classList.add("active");
+
+    $button1.classList.remove("active");
+    $button2.classList.add("active");
+  });
 });
